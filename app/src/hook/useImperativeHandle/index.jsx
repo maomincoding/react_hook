@@ -1,4 +1,5 @@
 import React, { useImperativeHandle, forwardRef, useRef, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 // const ForwardRef = forwardRef((props, ref) => {
 //   return (
@@ -41,6 +42,7 @@ const UseImperativeHandle = () => {
   const el1 = useRef(null);
   return (
     <div>
+      <button> <Link to="/"> Go Hook</Link></button>
       <div className="section">
         {/* <ForwardRef ref={el}></ForwardRef> */}
         {/* <button onClick={() => {

@@ -8,6 +8,7 @@ import UseContext from '../hook/useContext'
 import UseMemo from '../hook/useMemo'
 import UseCallback from '../hook/useCallback'
 import UseImperativeHandle from '../hook/useImperativeHandle'
+import UseLayoutEffect from '../hook/useLayoutEffect'
 
 function Root() {
   return (
@@ -21,6 +22,7 @@ function Root() {
                 <Route exact={true} path="/UseMemo" component={UseMemo}></Route>
                 <Route exact={true} path="/UseCallback" component={UseCallback}></Route>
                 <Route exact={true} path="/UseImperativeHandle" component={UseImperativeHandle}></Route>
+                <Route exact={true} path="/UseLayoutEffect" component={UseLayoutEffect}></Route>
               </div>
           </BrowserRouter>
   );

@@ -10,6 +10,7 @@ const Hook = ()=>{
       <button> <Link to="/UseMemo"> Go UseMemo</Link></button>
       <button> <Link to="/UseCallback"> Go UseCallback</Link></button>
       <button> <Link to="/UseImperativeHandle"> Go UseImperativeHandle</Link></button>
+      <button> <Link to="/UseLayoutEffect"> Go UseLayoutEffect</Link></button>
     </div>
   )
 }
