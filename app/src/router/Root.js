@@ -11,6 +11,7 @@ import UseImperativeHandle from '../hook/useImperativeHandle'
 import UseLayoutEffect from '../hook/useLayoutEffect'
 import Ownhook from '../hook/ownhook'
 import UseReducer from '../hook/useReducer'
+import Test from '../hook/useReducer/Test'
 
 function Root() {
   return (
@@ -27,6 +28,7 @@ function Root() {
                 <Route exact={true} path="/UseLayoutEffect" component={UseLayoutEffect}></Route>
                 <Route exact={true} path="/Ownhook" component={Ownhook}></Route>
                 <Route exact={true} path="/UseReducer" component={UseReducer}></Route>
+                <Route exact={true} path="/Test" component={Test}></Route>
               </div>
           </BrowserRouter>
   );

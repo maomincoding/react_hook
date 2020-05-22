@@ -1,10 +1,20 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import {Mycontext} from './reducer'
 
 const Test2 = () =>{
+  const {state,dispatch} = useContext(Mycontext);
   return(
     <div>
-      <p></p>
-      <button>set</button>
+      <p>{state.age}</p>
+      <button onClick={
+        ()=>{
+          const action = {
+            type:'setage',
+            age:'22'
+          }
+          dispatch(action);
+        }
+      }>setage</button>
     </div>
   )
 }

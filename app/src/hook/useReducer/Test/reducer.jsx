@@ -9,18 +9,24 @@ const reducer = (state,action)=>{
         ...state,
         name:action.name
       }
+    case 'setage':
+        return {
+          ...state,
+          age:action.age
+    }
     default:
       return state
   }
 }
 const data = {
-  name:'maomin'
+  name:'maomin',
+  age:'18'
 }
 
 const Reducer = (props)=>{
   const [state,dispatch] = useReducer(reducer,data);
   return (
-    <Mycontext.Provider value={state,dispatch}>
+    <Mycontext.Provider value={{state,dispatch}}>
       {props.children}
     </Mycontext.Provider>
   )

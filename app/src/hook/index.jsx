@@ -13,6 +13,7 @@ const Hook = ()=>{
       <button> <Link to="/UseLayoutEffect"> Go UseLayoutEffect</Link></button>
       <button> <Link to="/Ownhook"> Go Ownhook</Link></button>
       <button> <Link to="/UseReducer"> Go UseReducer</Link></button>
+      <button> <Link to="/Test"> Go Test</Link></button>
     </div>
   )
 }
