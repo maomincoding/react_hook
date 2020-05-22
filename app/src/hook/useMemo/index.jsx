@@ -7,7 +7,8 @@ const UseMemo = () => {
     const [num, setNum] = useState(0);
     let res = useMemo(() => {
         return { count, num }
-    }, [count, num])
+    // eslint-disable-next-line 
+    }, [num])
     // useEffect(()=>{
     //     console.log("useEffect");
     // })

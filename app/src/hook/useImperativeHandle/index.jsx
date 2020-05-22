@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 // })
 
 // 自定义向父组件暴露属性或方法
+
 const ImperativeHandle = forwardRef((props, ref) => {
   const inset = useRef();
   const [p1,setP1] = useState(0);
@@ -21,6 +22,7 @@ const ImperativeHandle = forwardRef((props, ref) => {
       inset.current.focus()
     },
     p1
+  // eslint-disable-next-line 
   }),[p2]) // 只有 p2改变的时候，才会把p1传给父组件
   return (
     <div>

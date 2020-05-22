@@ -8,7 +8,8 @@ const UseEffect = () => {
     return () => {
       console.log('componentWillUnmount'); // 相当于 componentWillUnmount
     }
-  }, [count])
+  // eslint-disable-next-line 
+  }, [])
   return (
     <div>
       <button> <Link to="/"> Go Hook</Link></button>
